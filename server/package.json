@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -c \"yellow.bold,green.bold\" -n \"SERVER, BUILD\" \"nodemon ./bin/www\" \"cd.. && cd client && ng build --watch\""
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "reload": "^3.0.0",
+    "serve-favicon": "~2.4.5"
+  }
+}
